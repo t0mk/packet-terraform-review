@@ -9,18 +9,16 @@ These are notes for work review for Packet from August and September 2017.
 
 The golang API client for Packet API is the first step before features can be added to Terraform. I got write access to github repo (Thanks!).
 
-Improvements, im
-
 #### Terraform provider
 
 Since early summer, Terraform providers have been moved to [separate repos](https://github.com/terraform-providers). Before, they used to be in the TF main repository I guess.
 
-Packet provider in [https://github.com/terraform-providers/terraform-provider-packet]. I got write access.
+Packet provider in https://github.com/terraform-providers/terraform-provider-packet. I got write access (Thanks!).
 
 
 
 
-### A pattern: Pls add device feature F to Terraform
+### A pattern: Adding device feature F to Terraform
 
 F ∈ {[hw reservation](https://help.packet.net/technical/deployment-options/reserved-hardware), [custom subnet size](https://help.packet.net/technical/networking/custom-subnet-size), [custom partitioning and raid](https://help.packet.net/technical/storage/custom-partitioning-raid), [iPXE boot](https://help.packet.net/technical/infrastructure/custom-ipxe)}
 
@@ -36,6 +34,4 @@ Hanging there:
 - Module for volumes: https://github.com/ansible/ansible/pull/27842
 - Module for volume attachments: https://github.com/ansible/ansible/pull/27843
 
-Few improvements have made it to the 2.4: http://docs.ansible.com/ansible/latest/packet_device_module.html
-
-
+Few improvements have made it to Ansible 2.4: http://docs.ansible.com/ansible/latest/packet_device_module.html
