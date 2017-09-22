@@ -9,6 +9,8 @@ These are notes for work review for Packet from August and September 2017.
 
 The golang API client for Packet API is the first step before features can be added to Terraform. I got write access to github repo (Thanks!).
 
+I added interface for volume attachment, ip subnet attachment, spot market prices, and wrote a lot of integration tests for those, adn for existing resources.
+
 #### Terraform provider
 
 Since early summer, Terraform providers have been moved to [separate repos](https://github.com/terraform-providers). Before, they used to be in the TF main repository I guess.
@@ -16,7 +18,7 @@ Since early summer, Terraform providers have been moved to [separate repos](http
 Packet provider in https://github.com/terraform-providers/terraform-provider-packet. I got write access (Thanks!).
 
 
-
+I added resources for volume attachment, IP reservation and attachment, and wrote couple of acceptance tests.
 
 ### A pattern: Adding device feature F to Terraform
 
